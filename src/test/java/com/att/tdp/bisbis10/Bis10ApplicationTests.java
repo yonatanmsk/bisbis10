@@ -1,4 +1,4 @@
-package com.att.tdp.bis10;
+package com.att.tdp.bisbis10;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

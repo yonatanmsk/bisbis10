@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.att.tdp</groupId>
-	<artifactId>bis10</artifactId>
+	<artifactId>bisbis10</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>bis10</name>
+	<name>bisbis10</name>
 	<description>bis-10 project</description>
 	<properties>
 		<java.version>21</java.version>
