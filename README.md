@@ -1,3 +1,40 @@
+The bisbis10 restaurant management system you’re envisioning is a backend service designed to handle various operations related to restaurants, their dishes, and ratings. Here’s a general description of the system:
+
+Restaurant Management System Overview
+Purpose: The system aims to provide a comprehensive platform for managing restaurant data, including details about the restaurants, their cuisines, dishes, and customer ratings.
+
+Functionality:
+
+Restaurants API: Allows users to retrieve information about all restaurants or filter them by cuisine. Users can also view details of a specific restaurant, add new restaurants, update existing ones, or delete them.
+Ratings API: Enables customers to post ratings for restaurants, which can be used to calculate the overall rating and improve the restaurant’s service based on customer feedback.
+Dishes API: Manages the dishes offered by each restaurant, including the ability to add, update, or delete dishes, as well as retrieve a list of dishes for a specific restaurant.
+Endpoints:
+
+GET /restaurants: Fetches a list of all restaurants with basic details. <br>
+GET /restaurants?cuisine=: Retrieves restaurants that match a specific cuisine.<br>
+GET /restaurants/{id}: Provides detailed information about a single restaurant, including its dishes.<br>
+POST /restaurants: Adds a new restaurant to the system.<br>
+PUT /restaurants/{id}: Updates the details of an existing restaurant.<br>
+DELETE /restaurants/{id}: Removes a restaurant from the system.<br>
+POST /ratings: Submits a new rating for a restaurant.<br>
+POST /restaurants/{id}/dishes: Adds a new dish to a restaurant’s menu.<br>
+PUT /restaurants/{id}/dishes/{dishId}: Updates the details of an existing dish.<br>
+DELETE /restaurants/{id}/dishes/{dishId}: Deletes a dish from the restaurant’s menu.<br>
+GET /restaurants/{id}/dishes: Retrieves the list of dishes offered by a restaurant.<br>
+Technical Aspects:
+
+The system should be built using Java Spring Boot, leveraging its robust framework for creating RESTful APIs.
+Data persistence can be managed using an in-memory database like H2 for simplicity, or a more robust solution like PostgreSQL for production.
+Proper validation, error handling, and response status codes are essential for a smooth user experience.
+Unit and integration tests should be written to ensure the reliability of the API endpoints.
+Homework Task:
+
+Candidates are expected to design and implement the above APIs, adhering to RESTful principles.
+The task will assess their ability to create a well-structured backend service, handle database operations, and follow best practices in API development.
+This homework assignment will give you insight into the candidate’s technical skills, problem-solving abilities, and familiarity with backend development using Java Spring Boot. 🚀🍽️
+
+
+
 ## Restaurants APIs
 
 | API Description           | Endpoint                | Request Body                                             | Response Status | Response Body                                                                                           |
