@@ -52,6 +52,12 @@ This homework assignment will give you insight into the candidate’s technical 
 |---------------------------|------------------------|---------------------------------------|-----------------|---------------|
 | Add a restaurant rating   | POST /ratings          | {"restaurantId": 2, "rating":3.3}     | 200 OK          |               |
 
+## Order APIs
+
+| API Description           | Endpoint               | Request Body                          | Response Status | Response Body |
+|---------------------------|------------------------|---------------------------------------|-----------------|---------------|
+| Order    | POST /order          | {"restaurantId": 2, orderItems:[{"dishId":12,amount:1},{"dishId":14,amount:1}  ]   | 200 OK          |  {orderId:"ef401fc8-d545-424b-928d-4789cd47bb6e"}             |
+
 ## Dishes APIs
 
 | API Description           | Endpoint                | Request Body                             | Response Status | Response Body                                                     |
