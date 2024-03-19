@@ -8,7 +8,7 @@ Functionality:
 Restaurants API: Allows users to retrieve information about all restaurants or filter them by cuisine. Users can also view details of a specific restaurant, add new restaurants, update existing ones, or delete them.
 Ratings API: Enables customers to post ratings for restaurants, which can be used to calculate the overall rating and improve the restaurant’s service based on customer feedback.
 Dishes API: Manages the dishes offered by each restaurant, including the ability to add, update, or delete dishes, as well as retrieve a list of dishes for a specific restaurant.
-Endpoints:
+Example endpoints:
 
 GET /restaurants: Fetches a list of all restaurants with basic details. <br>
 GET /restaurants?cuisine=: Retrieves restaurants that match a specific cuisine.<br>
