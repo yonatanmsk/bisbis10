@@ -66,3 +66,10 @@ This homework assignment will give you insight into the candidate’s technical 
 | Update a dish             | PUT /restaurants//dishes/ | {"description":"Great one","price": 34} | 200 OK          |                                                                  |
 | Delete a dish             | DELETE /restaurants//dishes/ |                                        | 204 No Content  |                                                                  |
 | Get dishes by a restaurant| GET /restaurants//dishes  |                                         | 200 OK          | [{"id":"1","name":"Humus","description":"Good one","price": 48}] |
+
+
+
+
+## Jump Start:
+For your convenience docker-compose.yml includes Postgresql DB, the app is already pointing to this connection.
+in addition, you have the schema and data sql files that can setup your db schema and init data. 
