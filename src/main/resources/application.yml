@@ -8,13 +8,13 @@ spring:
     url: jdbc:postgresql://localhost:5432/bisbis10
     username: bisbis10
     password: bisbis10
-    initialization-mode: always
-    initialize: true
     driverClassName: org.postgresql.Driver
     platform: postgres
   jpa:
     database: POSTGRESQL
     show-sql: true
-    generate-ddl: true
     hibernate:
       ddl-auto: update
+  sql:
+    init:
+      mode: always

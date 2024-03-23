@@ -1,3 +1,3 @@
-INSERT INTO users (username, firstname, lastname) VALUES
-  ('lala', 'lala', 'lala'),
-  ('lolo', 'lolo', 'lolo');
+INSERT INTO task ( description, completed) VALUES
+  ( 'description1', 'completed'),
+  ('description2', 'completed');

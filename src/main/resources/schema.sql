@@ -1,4 +1,3 @@
-CREATE TABLE task (
-  id          INTEGER PRIMARY KEY,
+CREATE TABLE IF NOT EXISTS task (
   description VARCHAR(64) NOT NULL,
-  completed   BIT NOT NULL);
+  completed   VARCHAR(30) NOT NULL);
