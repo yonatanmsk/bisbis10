@@ -71,5 +71,5 @@ This homework assignment will give you insight into the candidate’s technical 
 
 
 ## Jump Start:
-For your convenience docker-compose.yml includes Postgresql DB, the app is already pointing to this connection.
+For your convenience compose.yml includes Postgresql DB, the app is already pointing to this connection.
 in addition, you have the schema and data sql files that can setup your db schema and init data. 
