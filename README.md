@@ -76,7 +76,7 @@ in addition, you have the schema and data SQL files that can setup your DB schem
 
 
 ## Instructions:
- 1. fork this repo to your GitHub account.
- 2. clone it to your local machine.
- 3. complete the tasks.
- 4. submit a pull request with your solution
+ 1. Fork this repo to your GitHub account.
+ 2. Clone it to your local machine.
+ 3. Complete the task.
+ 4. On completeion, send your repo link to the TDP email, (a snapshot will be taken from your repo once you submit the homework)
