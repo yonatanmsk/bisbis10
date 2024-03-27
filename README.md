@@ -57,4 +57,4 @@ For your convenience, compose.yml includes Postgresql DB, the app is already poi
 1. Fork this repo to your GitHub account.
 2. Clone it to your local machine.
 3. Complete the task.
-4. On completion, send your repo link to the TDP email, (a snapshot will be taken from your repo once you submit the homework).
+4. On completion, send your repo link to the rm-tdpisraelhomework@intl.att.com email, (a snapshot will be taken from your repo once you submit the homework).
