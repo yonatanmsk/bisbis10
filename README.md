@@ -53,8 +53,13 @@ Candidates are expected to design and implement the above APIs, adhering to REST
 ## Jump Start
 For your convenience, compose.yml includes Postgresql DB, the app is already pointing to this connection. In addition, you have the schema and data SQL files that can setup your DB schema and init data.
 
+## Prerequisite
+1. Java SDK - https://www.oracle.com/java/technologies/downloads/#java21
+2. Java IDE - https://www.jetbrains.com/idea/download or any other IDE
+3. Docker - https://www.docker.com/products/docker-desktop/
+
 ## Instructions
 1. Fork this repo to your GitHub account.
-2. Clone it to your local machine.
-3. Complete the task.
-4. On completion, send your repo link to the rm-tdpisraelhomework@intl.att.com email, (a snapshot will be taken from your repo once you submit the homework).
+4. Clone it to your local machine.
+5. Complete the task.
+6. On completion, send your repo link to the rm-tdpisraelhomework@intl.att.com email, (a snapshot will be taken from your repo once you submit the homework). please do not update youur repo after you asubmit the homework 
