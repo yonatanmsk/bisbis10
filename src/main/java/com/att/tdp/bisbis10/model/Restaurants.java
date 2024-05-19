@@ -2,21 +2,23 @@ package com.att.tdp.bisbis10.model;
 
 import com.fasterxml.jackson.annotation.*;
 import jakarta.persistence.*;
-//import org.springframework.data.annotation.Id;
-
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @JsonPropertyOrder({ "id", "name", "averageRating", "isKosher", "cuisines" })
 public class Restaurants {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
+
     private String name;
+
     @ElementCollection
     @JsonIgnore
     private List<Double> ratings = new ArrayList<>();;
+
     private double averageRating;
     private boolean isKosher;
 
@@ -48,9 +50,6 @@ public class Restaurants {
         this.name = name;
     }
 
-//    public double getAverageRating() {
-//        return averageRating;
-//    }
     @JsonProperty("averageRating")
     public double getAverageRating() {
         return ratings.isEmpty() ? 0.0 : ratings.stream().mapToDouble(Double::doubleValue).average().orElse(0.0);

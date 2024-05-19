@@ -3,7 +3,6 @@ package com.att.tdp.bisbis10.service;
 import com.att.tdp.bisbis10.model.Restaurants;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-
 import java.text.DecimalFormat;
 
 @Service
@@ -25,7 +24,6 @@ public class RatingService {
         }
 
         restaurant.getRatings().add(rating);
-
         double newRating = calculateAverageRating(restaurant, rating);
         DecimalFormat df = new DecimalFormat("#.##");
         newRating = Double.parseDouble(df.format(newRating));

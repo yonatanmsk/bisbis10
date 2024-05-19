@@ -5,7 +5,7 @@ public class RatingRequest {
     private Long restaurantId;
     private double rating;
 
-    // Getters
+    // Getters and Setters
     public Long getRestaurantId() {
         return restaurantId;
     }
@@ -14,7 +14,6 @@ public class RatingRequest {
         return rating;
     }
 
-    // Setters
     public void setRestaurantId(Long restaurantId) {
         this.restaurantId = restaurantId;
     }

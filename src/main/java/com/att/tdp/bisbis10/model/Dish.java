@@ -30,7 +30,6 @@ public class Dish {
     }
 
     // Getters and setters
-
     public Long getId() {
         return id;
     }

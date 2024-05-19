@@ -1,8 +1,6 @@
 package com.att.tdp.bisbis10.model;
 
 import jakarta.persistence.*;
-
-//import javax.persistence.*;
 import java.util.List;
 import java.util.UUID;
 
@@ -11,6 +9,7 @@ public class Orders {
 
     @Id
     private UUID orderId;
+
     private Long restaurantId;
 
     @ElementCollection
@@ -28,7 +27,6 @@ public class Orders {
     }
 
     // Getters and setters
-
     public UUID getOrderId() {
         return orderId;
     }
@@ -68,7 +66,6 @@ public class Orders {
         }
 
         // Getters and setters
-
         public Long getDishId() {
             return dishId;
         }
@@ -86,5 +83,3 @@ public class Orders {
         }
     }
 }
-
-
