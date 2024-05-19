@@ -55,7 +55,6 @@ public class Restaurants {
     public double getAverageRating() {
         double average = ratings.isEmpty() ? 0.0 : ratings.stream().mapToDouble(Double::doubleValue).average().orElse(0.0);
         return Math.round(average * 100.0) / 100.0;
-//        return ratings.isEmpty() ? 0.0 : ratings.stream().mapToDouble(Double::doubleValue).average().orElse(0.0);
     }
 
     public void setAverageRating(double averageRating) {
