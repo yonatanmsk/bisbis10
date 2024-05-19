@@ -12,6 +12,7 @@ public class OrderService {
     @Autowired
     private OrderRepository orderRepository;
 
+    // save order to db with the restaurant id and the items order
     public UUID placeOrder(OrderRequest orderRequest) {
         Orders order = new Orders(orderRequest.getRestaurantId(), orderRequest.getOrderItems());
         orderRepository.save(order);

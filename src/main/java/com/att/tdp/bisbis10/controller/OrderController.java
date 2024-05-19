@@ -19,11 +19,12 @@ public class OrderController {
     @Autowired
     private OrderService orderService;
 
+    //
     @PostMapping
     public ResponseEntity<Map<String, String>> placeOrder(@RequestBody OrderRequest orderRequest) {
-        UUID orderId = orderService.placeOrder(orderRequest);
+        UUID orderId = orderService.placeOrder(orderRequest); // get the order id from the order creating object
         Map<String, String> response = new HashMap<>();
-        response.put("orderId", orderId.toString());
+        response.put("orderId", orderId.toString()); // inserting new order and its id
         return ResponseEntity.ok().body(response);
     }
 }

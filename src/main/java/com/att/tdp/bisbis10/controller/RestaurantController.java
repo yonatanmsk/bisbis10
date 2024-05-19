@@ -23,7 +23,7 @@ public class RestaurantController {
     @GetMapping
     public ResponseEntity<List<Restaurants>> getAllRestaurants() {
         List<Restaurants> restaurants = restaurantService.getAllRestaurants();
-        for (Restaurants restaurant : restaurants) {
+        for (Restaurants restaurant : restaurants) { // preventing the show of dishes when presenting the restaurants
             restaurant.setDishes(null);
         }
         return ResponseEntity.ok(restaurants);
@@ -32,7 +32,7 @@ public class RestaurantController {
     @GetMapping("/by-cuisine")
     public ResponseEntity<List<Restaurants>> getRestaurantsByCuisine(@RequestParam String cuisine) {
         List<Restaurants> restaurants = restaurantService.getRestaurantsByCuisine(cuisine);
-        for (Restaurants restaurant : restaurants) {
+        for (Restaurants restaurant : restaurants) { // preventing the show of dishes when presenting the restaurants
             restaurant.setDishes(null);
         }
         return ResponseEntity.ok(restaurants);
@@ -41,7 +41,7 @@ public class RestaurantController {
     @GetMapping("/{id}")
     public ResponseEntity<Restaurants> getRestaurantById(@PathVariable Long id) {
         Restaurants restaurant = restaurantService.getRestaurantById(id);
-        if (restaurant != null) {
+        if (restaurant != null) { // check if existing restaurants
             return ResponseEntity.ok(restaurant);
         } else {
             return ResponseEntity.notFound().build();
@@ -57,7 +57,7 @@ public class RestaurantController {
     @PutMapping("/{id}")
     public ResponseEntity<Void> updateRestaurant(@PathVariable Long id, @RequestBody Restaurants updatedRestaurant) {
         ResponseEntity<Void> restaurant = restaurantService.updateRestaurant(id, updatedRestaurant);
-        if (restaurant != null) {
+        if (restaurant != null) { // check if existing restaurants
             return ResponseEntity.ok().build(); // Return 200 OK status
         } else {
             return ResponseEntity.notFound().build(); // Return 404 Not Found status

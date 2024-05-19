@@ -19,7 +19,7 @@ public class DishService {
 
     public Dish addDish(Long restaurantId, Dish dish) {
         Restaurants restaurant = restaurantRepository.findById(restaurantId).orElse(null);
-        if (restaurant == null) {
+        if (restaurant == null) { // check if existing restaurants
             throw new RuntimeException("Restaurant not found with ID: " + restaurantId);
         }
         dish.setRestaurant(restaurant);
@@ -28,7 +28,7 @@ public class DishService {
 
     public Dish updateDish(Long restaurantId, Long dishId, Dish dishDetails) {
         Dish dish = dishRepository.findById(dishId).orElse(null);
-        if (dish == null || !dish.getRestaurant().getId().equals(restaurantId)) {
+        if (dish == null || !dish.getRestaurant().getId().equals(restaurantId)) { // check if existing restaurants and dish
             throw new RuntimeException("Dish not found with ID: " + dishId + " for restaurant ID: " + restaurantId);
         }
         dish.setDescription(dishDetails.getDescription());
@@ -38,7 +38,7 @@ public class DishService {
 
     public void deleteDish(Long restaurantId, Long dishId) {
         Dish dish = dishRepository.findById(dishId).orElse(null);
-        if (dish == null || !dish.getRestaurant().getId().equals(restaurantId)) {
+        if (dish == null || !dish.getRestaurant().getId().equals(restaurantId)) { // check if existing restaurants
             throw new RuntimeException("Dish not found with ID: " + dishId + " for restaurant ID: " + restaurantId);
         }
         dishRepository.delete(dish);
